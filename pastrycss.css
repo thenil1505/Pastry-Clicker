@@ -7,6 +7,7 @@ body {
     flex-direction:row;
     padding-left:660px;
     background-color:rgb(238, 227, 227);
+    
 }
 
 #pastry_text{
@@ -24,6 +25,7 @@ body {
 #hand_img {
     width:50px;
     height:60px;
+    border: 1px solid rgb(88, 87, 87);
 }
 
 #shop_text {
@@ -48,6 +50,45 @@ body {
 }
 #choccy_img:hover {
     box-shadow: 0 9px rgb(214, 114, 56);
+}
+
+#shopie_img {
+    width:65px;
+    height:60px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(221, 107, 123);
+}
+#shopie_img:hover {
+    box-shadow: 0 9px rgb(156, 75, 85)
+}
+
+#bred_img{
+    width:65px;
+    height:60px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(128, 211, 125);
+}
+#bred_img:hover{
+    box-shadow: 0 9px rgb(88, 139, 88);
+}
+
+#cuppy_img{
+    width:65px;
+    height:60px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(143, 158, 243);
+}
+#cuppy_img:hover{
+    box-shadow: 0 9px rgb(83, 100, 173);
 }
 
 .shop_hand {
@@ -89,6 +130,66 @@ body {
     box-shadow: 0 9px rgb(136, 134, 134);
 }
 #biscuit_price {
+    width: 40px;
+    height: 40px;
+    padding-left: 30px;
+}
+
+.shop_pies {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(180, 177, 184);
+    width: 250px;
+    height: 90px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(136, 134, 134);
+}
+#pie_price {
+    width: 40px;
+    height: 40px;
+    padding-left: 30px;
+}
+
+.shop_bread {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(180, 177, 184);
+    width: 250px;
+    height: 90px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(136, 134, 134);
+}
+#bread_price{
+    width: 40px;
+    height: 40px;
+    padding-left: 30px;
+}
+
+.shop_cupcakes {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(180, 177, 184);
+    width: 250px;
+    height: 90px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(136, 134, 134); 
+}
+#cucpcake_price{
     width: 40px;
     height: 40px;
     padding-left: 30px;
@@ -150,7 +251,7 @@ body {
     box-shadow: 0 9px rgb(85, 189, 81);
 }
 
-#cupcakes_img {
+#cupcake_img {
     width:120px;
     height:100px;
     margin:20px;
@@ -160,7 +261,7 @@ body {
     border-radius: 15px;
     box-shadow: 0 9px rgb(156, 152, 190);
 }
-#cupcakes_img:hover {
+#cupcake_img:hover {
     box-shadow: 0 9px rgb(74, 90, 236);
 }
 
