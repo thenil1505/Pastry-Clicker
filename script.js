@@ -29,12 +29,12 @@ customers = 0;
 //Prices
 hands_price = 50;
 bakery_price = 250;
-cafe_price = 550;
-decor_price = 850;
-chef_price = 1050;
-packer_price = 2000;
-deliver_price = 4500;
-custom_price = 6000;
+cafe_price = 1000;
+decor_price = 5050;
+chef_price = 15000;
+packer_price = 20000;
+deliver_price = 40500;
+custom_price = 70000;
 
 
 function pastry_click(){
@@ -44,7 +44,7 @@ function buy_hand(){
     if (pastry >= hands_price){
         hands++;
         pastry -= hands_price;
-        hands_price += hands_price;
+        hands_price += 50;
         hand_num_EL.innerHTML = hands;
         hand_price_EL.innerHTML = hands_price;
     }

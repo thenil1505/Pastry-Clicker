@@ -1,39 +1,202 @@
+body {
+    background-color: rgb(231, 222, 224);
+}
+
+.main{
+    display:flex;
+    flex-direction:row;
+    padding-left:660px;
+    background-color:rgb(238, 227, 227);
+}
+
+#pastry_text{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#pastry_num{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
 #hand_img {
-    width:30px;
-    height:30px;
+    width:50px;
+    height:60px;
+}
+
+#shop_text {
+    padding-right:140px;
+}
+
+.shop {
+    display:flex;
+    flex-direction:column;
+    padding-top: 50px;
+    align-items:flex-end;
+}
+
+#choccy_img {
+    width:65px;
+    height:60px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(255, 161, 132);
+}
+#choccy_img:hover {
+    box-shadow: 0 9px rgb(214, 114, 56);
+}
+
+.shop_hand {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(180, 177, 184);
+    width: 250px;
+    height: 90px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(136, 134, 134);
+}
+#shop_hand:hover {
+    box-shadow: 0 9px rgb(124, 124, 124);
+}
+
+#hand_num {
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.shop_biscuit {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(180, 177, 184);
+    width: 250px;
+    height: 90px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(136, 134, 134);
+}
+#biscuit_price {
+    width: 40px;
+    height: 40px;
+    padding-left: 30px;
 }
 
 #pastry_img {
     width:120px;
     height:100px;
+    margin:20px;
     cursor: pointer;
     outline: none;
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px rgb(228, 172, 172);
 }
-
-.button:active {
-    box-shadow: 0 5px rgb(196, 142, 142);
-    transform: translateY(4px);
+#pastry_img:hover {
+    box-shadow: 0 9px rgb(236, 139, 139);
 }
 
 #biscuit_img {
     width:120px;
     height:100px;
+    margin:20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(190, 138, 108);
+}
+#biscuit_img:hover {
+    box-shadow: 0 9px rgb(233, 119, 43);
 }
 
 #pie_img {
     width:120px;
     height:100px;
+    margin:20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(179, 66, 75);
+}
+#pie_img:hover {
+    box-shadow: 0 9px rgb(241, 35, 35);
 }
 
 #bread_img {
     width:120px;
     height:100px;
+    margin:20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(196, 193, 151);
+}
+#bread_img:hover {
+    box-shadow: 0 9px rgb(85, 189, 81);
 }
 
 #cupcakes_img {
     width:120px;
     height:100px;
+    margin:20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(156, 152, 190);
+}
+#cupcakes_img:hover {
+    box-shadow: 0 9px rgb(74, 90, 236);
+}
+
+.buildings {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    padding-top:5px;
+    margin-bottom:10px;
+}
+
+.bakery_build{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-right: 5px;
+    background-color: rgb(199, 164, 164);
+    width: 250px;
+    height: 90px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(160, 115, 115);
+}
+#bakery_num {
+    width: 40px;
+    height: 40px;
+    padding-left: 50px;
+}
+#bakery_price {
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+#building_text {
+    padding-right:100px;
 }
