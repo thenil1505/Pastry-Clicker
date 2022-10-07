@@ -6,6 +6,16 @@
 #pastry_img {
     width:120px;
     height:100px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(228, 172, 172);
+}
+
+.button:active {
+    box-shadow: 0 5px rgb(196, 142, 142);
+    transform: translateY(4px);
 }
 
 #biscuit_img {

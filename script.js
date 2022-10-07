@@ -2,6 +2,7 @@ pastry_EL = document.querySelector("#pastry_img");
 pastry_num_EL = document.querySelector("#pastry_num");
 hand_EL = document.querySelector("#hand_img");
 hand_num_EL = document.querySelector("#hand_num");
+hand_price_EL = document.querySelector("#hand_price");
 
 console.log(pastry_num_EL);
 
@@ -40,15 +41,17 @@ function pastry_click(){
     pastry++;
 }
 function buy_hand(){
-    if (pastry > 50){
+    if (pastry >= hands_price){
         hands++;
-        pastry -= 50
-        //hands_price += hands_price;
+        pastry -= hands_price;
+        hands_price += hands_price;
+        hand_num_EL.innerHTML = hands;
+        hand_price_EL.innerHTML = hands_price;
     }
     
 }
 
-pastry_EL.addEventListener("click", pastry_click); // når vi klikker på cookie
+pastry_EL.addEventListener("click", pastry_click); // når vi klikker på pastry
 hand_EL.addEventListener("click", buy_hand)
 
 
@@ -56,6 +59,6 @@ var timer = setInterval(myTimer, 60); // kjører funksjonen myTimer 1 gang i sek
 function myTimer(){ 
     pastry += hands;
     pastry_num_EL.innerHTML = pastry;
-    hand_num_EL.innerHTML = hands;
+    
     
 }
