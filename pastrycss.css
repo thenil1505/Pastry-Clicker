@@ -10,6 +10,13 @@ body {
     
 }
 
+.buildings{
+    background-color: rgb(236, 178, 201);
+    display:block;
+    align-items: flex-start;
+
+}
+
 #pastry_text{
     display:flex;
     flex-direction:column;
