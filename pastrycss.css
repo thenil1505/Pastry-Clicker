@@ -5,21 +5,19 @@ body {
 .main{
     display:flex;
     flex-direction:row;
-    padding-left:660px;
+    padding-left:850px;
     background-color:rgb(238, 227, 227);
     
 }
 
-#pastry_text{
+.text_num_pastry{
     display:flex;
-    flex-direction:column;
-    align-items:center;
+    padding-left:1100px;
+    
 }
 
-#pastry_num{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+#pastry_text{
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #hand_img {
@@ -35,8 +33,17 @@ body {
 .shop {
     display:flex;
     flex-direction:column;
-    padding-top: 50px;
+    padding-top: 30px;
     align-items:flex-end;
+}
+.all_shop{
+    display: flex;
+    flex-direction: column;
+}
+
+.shops_and_buildings{
+    display: flex;
+    flex-direction: row;
 }
 
 #choccy_img {
@@ -264,18 +271,15 @@ body {
 #cupcake_img:hover {
     box-shadow: 0 9px rgb(74, 90, 236);
 }
-
-.buildings {
+.buildings_shop {
     display:flex;
     flex-direction:column;
     align-items:flex-end;
     padding-top:5px;
-    margin-bottom:10px;
-}
+} 
 
 .bakery_build{
     display: flex;
-    flex-direction: row;
     padding: 10px;
     margin-right: 5px;
     background-color: rgb(199, 164, 164);
@@ -287,6 +291,14 @@ body {
     border-radius: 15px;
     box-shadow: 0 9px rgb(160, 115, 115);
 }
+
+.bakery{
+    height:1200px;
+    width:1200px;
+    background-color: rgb(218, 204, 209);
+    margin:30px;
+}
+
 #bakery_num {
     width: 40px;
     height: 40px;
@@ -300,4 +312,9 @@ body {
 
 #building_text {
     padding-right:100px;
+}
+
+.shop_bake_img{
+    width: 120px;
+    height: 90px;
 }

@@ -17,8 +17,9 @@ bread_EL = document.querySelector("#bred_img");
 cuppy_buy = document.querySelector("#cupcake_price")
 cupcake_EL = document.querySelector("#cuppy_img")
 
-bakeri_EL = document.querySelector("#bakeri_pic");
 
+bakery_EL = document.querySelector("#bakery");
+bakery_num_EL = document.querySelector("#bakery_num");
 
 //Pastries
 pastry = 0;
@@ -109,7 +110,8 @@ function buy_bake(){
     if (pastry >= bakery_price){
         bakeries++;
         pastry -= bakery_price;
-        //bakeri_EL.innerHTML += <img src="photos pastry/bakery.jpg" alt=""></img>
+        bakery_num_EL.innerHTML = bakeries;
+        bakery_EL.innerHTML += "<img src='photos pastry/bakery.jpg' class='shop_bake_img' alt=''></img>";
    }
 }
 
@@ -129,12 +131,13 @@ cupcake_EL.addEventListener("click", click_cupcake)
 
 hand_EL.addEventListener("click", buy_hand)
 
-bakeri_EL.addEventListener("click", buy_bake)
+bakery_EL.addEventListener("click", buy_bake)
 
 
 var timer = setInterval(myTimer, 60); // kjører funksjonen myTimer 1 gang i sekundet
 function myTimer(){ 
     pastry += hands;
+    pastry += bakeries;
     pastry_num_EL.innerHTML = pastry;
     
 
