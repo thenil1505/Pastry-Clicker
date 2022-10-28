@@ -1,19 +1,18 @@
 body {
-    background-color: rgb(231, 222, 224);
+    background-color: rgba(238, 238, 238, 0.836);
 }
 
 .main{
     display:flex;
     flex-direction:row;
     padding-left:850px;
-    background-color:rgb(238, 227, 227);
-    
+    background-color:rgb(212, 203, 203);
+    border: 5px solid rgb(253, 243, 243);
 }
 
 .text_num_pastry{
     display:flex;
     padding-left:1100px;
-    
 }
 
 #pastry_text{
@@ -27,7 +26,10 @@ body {
 }
 
 #shop_text {
-    padding-right:140px;
+    width: 300px;
+    background-color: darkgrey;
+    text-align: center;
+    color: white;
 }
 
 .shop {
@@ -39,11 +41,18 @@ body {
 .all_shop{
     display: flex;
     flex-direction: column;
+    background-color: rgb(207, 200, 200);
+    border: 5px solid rgb(207, 200, 200);
+    align-items: center;
+    height: 1000px;
+    margin-right: 20px;;
+    
 }
 
-.shops_and_buildings{
+.shop_and_buildings{
     display: flex;
     flex-direction: row;
+    justify-content:space-between;
 }
 
 #choccy_img {
@@ -278,10 +287,11 @@ body {
     padding-top:5px;
 } 
 
+
 .bakery_build{
     display: flex;
     padding: 10px;
-    margin-right: 5px;
+    margin-right: 10px;
     background-color: rgb(199, 164, 164);
     width: 250px;
     height: 90px;
@@ -293,8 +303,8 @@ body {
 }
 
 .bakery{
-    height:1200px;
-    width:1200px;
+    height:1000px;
+    width:1900px;
     background-color: rgb(218, 204, 209);
     margin:30px;
 }
@@ -311,7 +321,11 @@ body {
 }
 
 #building_text {
-    padding-right:100px;
+    align-items: center;
+    width: 300px;
+    text-align:center;
+    background-color: darkgrey;
+    color: white;
 }
 
 .shop_bake_img{

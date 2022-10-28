@@ -17,7 +17,6 @@ bread_EL = document.querySelector("#bred_img");
 cuppy_buy = document.querySelector("#cupcake_price")
 cupcake_EL = document.querySelector("#cuppy_img")
 
-
 bakery_EL = document.querySelector("#bakery");
 bakery_num_EL = document.querySelector("#bakery_num");
 
