@@ -4,6 +4,8 @@ pastry_num_EL = document.querySelector("#pastry_num");
 hand_EL = document.querySelector("#hand_img");
 hand_num_EL = document.querySelector("#hand_num");
 hand_price_EL = document.querySelector("#hand_price");
+hands10_EL = document.querySelector("#buy10_hands")
+hands10_price_EL = document.querySelector("#hands10_price")
 
 cookie_buy = document.querySelector("#biscuit_price")
 cookie_EL = document.querySelector("#choccy_img");
@@ -34,7 +36,7 @@ hands = 0;
 //Buildings
 bakeries = 0;
 cafes = 0;
-decorators =0;
+decorators = 0;
 chefs = 0;
 packers = 0;
 delivery = 0;
@@ -42,6 +44,8 @@ customers = 0;
 
 //Prices
 hands_price = 50;
+hands10_price = 500;
+
 bakery_price = 250;
 cafe_price = 1000;
 decor_price = 5050;
@@ -105,6 +109,16 @@ function buy_hand(){
     } 
 }
 
+function buy10_hand(){
+    if (pastry >= hands10_price){
+        hands += 10;
+        pastry -= hands10_price;
+        hands10_price += 500;
+        hand_num_EL.innerHTML = hands;
+        hands10_price_EL.innterHTML = hands10_price;
+    }
+}
+
 function buy_bake(){
     if (pastry >= bakery_price){
         bakeries++;
@@ -129,6 +143,7 @@ cuppy_buy.addEventListener("click", buy_cuppy)
 cupcake_EL.addEventListener("click", click_cupcake)
 
 hand_EL.addEventListener("click", buy_hand)
+hands10_EL.addEventListener("click", buy10_hand)
 
 bakery_EL.addEventListener("click", buy_bake)
 
