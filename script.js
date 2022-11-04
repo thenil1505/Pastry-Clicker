@@ -4,8 +4,8 @@ pastry_num_EL = document.querySelector("#pastry_num");
 hand_EL = document.querySelector("#hand_img");
 hand_num_EL = document.querySelector("#hand_num");
 hand_price_EL = document.querySelector("#hand_price");
-hands10_EL = document.querySelector("#buy10_hands")
-hands10_price_EL = document.querySelector("#hands10_price")
+h10_EL = document.querySelector("#buy10_hands")
+h10_price_EL = document.querySelector("#hands10_price")
 
 cookie_buy = document.querySelector("#biscuit_price")
 cookie_EL = document.querySelector("#choccy_img");
@@ -19,7 +19,8 @@ bread_EL = document.querySelector("#bred_img");
 cuppy_buy = document.querySelector("#cupcake_price")
 cupcake_EL = document.querySelector("#cuppy_img")
 
-bakery_EL = document.querySelector("#bakery");
+bakery_EL = document.querySelector("#bakeri_pic");
+bakeryput_EL = document.querySelector("#bakery")
 bakery_num_EL = document.querySelector("#bakery_num");
 
 //Pastries
@@ -32,6 +33,7 @@ cupcakes = 1;
 
 //Upgrades
 hands = 0;
+bakery_boost = 0;
 
 //Buildings
 bakeries = 0;
@@ -44,7 +46,7 @@ customers = 0;
 
 //Prices
 hands_price = 50;
-hands10_price = 500;
+h10_price = 500;
 
 bakery_price = 250;
 cafe_price = 1000;
@@ -110,22 +112,28 @@ function buy_hand(){
 }
 
 function buy10_hand(){
-    if (pastry >= hands10_price){
+    if (pastry >= h10_price){
         hands += 10;
-        pastry -= hands10_price;
-        hands10_price += 500;
+        pastry -= h10_price;
+        h10_price += 500;
         hand_num_EL.innerHTML = hands;
-        hands10_price_EL.innterHTML = hands10_price;
+        h10_price_EL.innterHTML = h10_price;
     }
 }
 
 function buy_bake(){
     if (pastry >= bakery_price){
         bakeries++;
+        bakery_boost+= 100;
         pastry -= bakery_price;
+        bakery_price += 100;
         bakery_num_EL.innerHTML = bakeries;
-        bakery_EL.innerHTML += "<img src='photos pastry/bakery.jpg' class='shop_bake_img' alt=''></img>";
+        bakeryput_EL.innerHTML += "<img src='photos pastry/bakery.jpg' class='shop_bake_img' alt=''></img>";
    }
+}
+
+if (bakeries = 32){
+    bakeryput_EL.innerHTML 
 }
 
 pastry_EL.addEventListener("click", pastry_click); // når vi klikker på pastry
@@ -143,7 +151,7 @@ cuppy_buy.addEventListener("click", buy_cuppy)
 cupcake_EL.addEventListener("click", click_cupcake)
 
 hand_EL.addEventListener("click", buy_hand)
-hands10_EL.addEventListener("click", buy10_hand)
+h10_EL.addEventListener("click", buy10_hand)
 
 bakery_EL.addEventListener("click", buy_bake)
 
@@ -152,6 +160,7 @@ var timer = setInterval(myTimer, 60); // kjører funksjonen myTimer 1 gang i sek
 function myTimer(){ 
     pastry += hands;
     pastry += bakeries;
+    pastry += bakery_boost;
     pastry_num_EL.innerHTML = pastry;
     
 

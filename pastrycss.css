@@ -314,6 +314,13 @@ body {
     padding-top:5px;
 } 
 
+.buildings{
+    height:1000px;
+    width:2000px;
+    background-color: rgb(209, 200, 203);
+    margin: 10px;
+}
+
 
 .bakery_build{
     display: flex;
@@ -330,10 +337,10 @@ body {
 }
 
 .bakery{
-    height:1000px;
-    width:1900px;
-    background-color: rgb(218, 204, 209);
-    margin:30px;
+    height:200px;
+    width:2000px;
+    background-color: rgb(207, 203, 201);
+    
 }
 
 #bakery_num {
@@ -358,4 +365,28 @@ body {
 .shop_bake_img{
     width: 120px;
     height: 90px;
+}
+
+.cafe{
+    height:200px;
+    width:2000px;
+    background-color: rgb(182, 178, 173);
+}
+
+.decorators{
+    height:200px;
+    width:2000px;
+    background-color: rgb(170, 165, 162);
+}
+
+.chefs{
+    height:200px;
+    width:2000px;
+    background-color: rgba(126, 125, 123, 0.651);
+}
+
+.packer{
+    height:200px;
+    width:2000px;
+    background-color: rgb(90, 90, 89);
 }
